@@ -8,13 +8,13 @@ import { AuthContextProvider } from "./Context/AuthContext.jsx"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <>
+    <main className="bg-gray-900 text-white min-h-screen">
       <h1 className="text-center pt-4 text-3xl">
         React Supabase Authentication & Context
       </h1>
       <AuthContextProvider>
         <RouterProvider router={router}>{/* <App /> */}</RouterProvider>
       </AuthContextProvider>
-    </>
+    </main>
   </StrictMode>
 )
